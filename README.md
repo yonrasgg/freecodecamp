@@ -8,7 +8,7 @@ This repository hosts the code developed during various courses taken on FreeCod
 
 ## Courses Completed
 
-- [Scientific Computing with Python](#)
+- [Scientific Computing with Python]
   - [ ] Learn String Manipulation by Building a Cipher
   - [ ] Learn How to Work with Numbers and Strings by Implementing the Luhn Algorithm
   - [ ] Learn Lambda Functions by Building an Expense Tracker
