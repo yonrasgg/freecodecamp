@@ -1,4 +1,4 @@
-# FreeCodeCamp Course Projects Repository
+# FreeCodeCamp.org Course Projects Repository
 
 This repository hosts the code developed during various courses taken on FreeCodeCamp.
 
