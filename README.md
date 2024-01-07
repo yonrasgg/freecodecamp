@@ -8,7 +8,17 @@ This repository hosts the code developed during various courses taken on FreeCod
 
 ## Courses Completed
 
-- [Scientific Computing with Python](#) - Brief description or key learnings
+- [Scientific Computing with Python](#)
+  - [ ] Learn String Manipulation by Building a Cipher
+  - [ ] Learn How to Work with Numbers and Strings by Implementing the Luhn Algorithm
+  - [ ] Learn Lambda Functions by Building an Expense Tracker
+  - [ ] Learn Python List Comprehension By Building a Case Converter Program
+  - [ ] Learn Regular Expressions by Building a Password Generator
+  - [ ] Learn Algorithm Design by Building a Shortest Path Algorithm
+  - [ ] Learn Recursion by Solving the Tower of Hanoi Puzzle
+  - [ ] Learn Data Structures by Building the Merge Sort Algorithm
+  - [ ] Learn Classes and Objects by Building a Sudoku Solver
+  - [ ] Learn Tree Traversal by Building a Binary Search Tree
 
 ## Folders Structure
 
