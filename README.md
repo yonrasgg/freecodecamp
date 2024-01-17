@@ -44,7 +44,7 @@ Scientific Computing with Python
         └── example.py
 ```
 
-Each course folder contains the projects and assignments related to that specific course.
+Each course folder contains the projects and assignments related to that specific project.
 
 ## Acknowledgments
 
