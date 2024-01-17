@@ -11,8 +11,8 @@ This repository hosts the code developed during various courses taken on FreeCod
 - [Scientific Computing with Python](https://github.com/yonrasgg/freecodecamp/tree/main/Scientific%20Computing%20with%20Python)
   - [X] Learn String Manipulation by Building a Cipher
   - [X] Learn How to Work with Numbers and Strings by Implementing the Luhn Algorithm
-  - [ ] Learn Lambda Functions by Building an Expense Tracker
-  - [ ] Learn Python List Comprehension By Building a Case Converter Program
+  - [X] Learn Lambda Functions by Building an Expense Tracker
+  - [X] Learn Python List Comprehension By Building a Case Converter Program
   - [ ] Learn Regular Expressions by Building a Password Generator
   - [ ] Learn Algorithm Design by Building a Shortest Path Algorithm
   - [ ] Learn Recursion by Solving the Tower of Hanoi Puzzle
@@ -22,10 +22,26 @@ This repository hosts the code developed during various courses taken on FreeCod
 
 ## Folders Structure
 
-- `Course_Name_1/`: Description of projects or assignments completed in Course Name 1.
-- `Course_Name_2/`: Description of projects or assignments completed in Course Name 2.
-- `Course_Name_3/`: Description of projects or assignments completed in Course Name 3.
-
+Scientific Computing with Python
+    ├── Building a Case Converter Program
+    │   ├── Case Converter Using Lists
+    │   │   └── case_converter_list.py
+    │   └── Case Converter Using Loop
+    │       └── case_converter_loop.py
+    ├── Building a Cipher
+    │   ├── caesar_cipher
+    │   │   └── caesar_cipher.py
+    │   └── vigenère_cipher
+    │       └── vigenère_cipher.py
+    ├── Implementing the Luhn Algorithm
+    │   └── luhn _algorithm.py
+    ├── Lambda Functions by Building and Expense Tracker
+    │   └── expense_tracker.py
+    └── Regular Expressions by Building a Password Generator
+    │   └── password_generator.py
+    └── Other Projects
+        └── example.py
+        
 Each course folder contains the projects and assignments related to that specific course.
 
 ## Acknowledgments
