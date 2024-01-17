@@ -22,6 +22,7 @@ This repository hosts the code developed during various courses taken on FreeCod
 
 ## Folders Structure
 
+```
 Scientific Computing with Python
     ├── Building a Case Converter Program
     │   ├── Case Converter Using Lists
@@ -41,7 +42,8 @@ Scientific Computing with Python
     │   └── password_generator.py
     └── Other Projects
         └── example.py
-        
+```
+
 Each course folder contains the projects and assignments related to that specific course.
 
 ## Acknowledgments
