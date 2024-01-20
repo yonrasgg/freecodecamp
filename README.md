@@ -13,7 +13,7 @@ This repository hosts the code developed during various courses taken on FreeCod
   - [X] Learn How to Work with Numbers and Strings by Implementing the Luhn Algorithm
   - [X] Learn Lambda Functions by Building an Expense Tracker
   - [X] Learn Python List Comprehension By Building a Case Converter Program
-  - [ ] Learn Regular Expressions by Building a Password Generator
+  - [X] Learn Regular Expressions by Building a Password Generator
   - [ ] Learn Algorithm Design by Building a Shortest Path Algorithm
   - [ ] Learn Recursion by Solving the Tower of Hanoi Puzzle
   - [ ] Learn Data Structures by Building the Merge Sort Algorithm
