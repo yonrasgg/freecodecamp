@@ -14,7 +14,7 @@ This repository hosts the code developed during various courses taken on FreeCod
   - [X] Learn Lambda Functions by Building an Expense Tracker
   - [X] Learn Python List Comprehension By Building a Case Converter Program
   - [X] Learn Regular Expressions by Building a Password Generator
-  - [ ] Learn Algorithm Design by Building a Shortest Path Algorithm
+  - [X] Learn Algorithm Design by Building a Shortest Path Algorithm
   - [ ] Learn Recursion by Solving the Tower of Hanoi Puzzle
   - [ ] Learn Data Structures by Building the Merge Sort Algorithm
   - [ ] Learn Classes and Objects by Building a Sudoku Solver
