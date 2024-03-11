@@ -14,4 +14,11 @@ class Board:
                 row_list.extend(row_square)
                 if square_no != 3:
                     row_list.append('║')
-                
+            row = f'║ {" ".join(row_list)} ║\n'
+            row_empty = row.replace('0', ' ')
+            board_string += row_empty
+            if index < 8:
+                if index % 3 == 2:
+                    board_string += f'╠═══{"╪═══"*2}{"╬═══"}{"╪═══"*2}{"╬═══"}{"╪═══"*2}╣\n'
+                else:
+                    board_string += middle_lines
