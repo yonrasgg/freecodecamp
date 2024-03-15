@@ -22,3 +22,37 @@ class Board:
                     board_string += f'╠═══{"╪═══"*2}{"╬═══"}{"╪═══"*2}{"╬═══"}{"╪═══"*2}╣\n'
                 else:
                     board_string += middle_lines
+            else:
+                board_string += lower_lines
+            return board_string
+        
+    def find_empty_cell(self):
+        for row, contents in enumerate(self.board):
+            try:
+                col = contents.index(0)
+                return row, col
+            except ValueError:
+                pass
+        return None, None
+                    
+    def valid_in_row(self, row, num):
+        all(
+            self.board[row][col] != num
+            for row in range(9)
+        )   
+    
+        return all(
+            self.board[row][col] != num
+            for row in range(9)
+        )
+
+    def valid_in_square(self, row, col, num):
+        row_start = (row // 3) * 3
+        col_start = (col // 3) * 3
+        for row_no in range(row_start, row_start + 3):
+            for col_no in range(col_start, col_start + 3):
+                if self.board[row_no][col_no] == num:
+                    return False
+        return True
+    
+    
