@@ -55,4 +55,9 @@ class Board:
                     return False
         return True
     
+    def is_valid(self, row, col, num):
+        row, col = empty
+        valid_in_row = self.valid_in_row(row, num)
+        valid_in_col = self.valid_in_col(col, num)
+    
     
