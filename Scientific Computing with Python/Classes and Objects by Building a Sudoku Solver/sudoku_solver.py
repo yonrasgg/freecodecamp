@@ -35,12 +35,13 @@ class Board:
                 pass
         return None, None
                     
-    def valid_in_row(self, row, num):
-        all(
+    def valid_in_row(self, row, col, num):
+        return all(
             self.board[row][col] != num
-            for row in range(9)
-        )   
-    
+            for col in range(9)
+        )
+        
+    def valid_in_col(self, row, col, num):
         return all(
             self.board[row][col] != num
             for row in range(9)
@@ -56,8 +57,54 @@ class Board:
         return True
     
     def is_valid(self, row, col, num):
-        row, col = empty
+        next_empty = self.find_empty_cell()
+        row, col = next_empty
         valid_in_row = self.valid_in_row(row, num)
         valid_in_col = self.valid_in_col(col, num)
+        valid_in_square = self.valid_in_square(row, col, num)
+        all([valid_in_row, valid_in_col, valid_in_square])
+        return all([valid_in_row, valid_in_col, valid_in_square])
     
-    
+    def solver(self):
+        if(next_empty := self.find_empty_cell()) is None:
+            return True
+        else:
+            for guess in range(1, 10):
+                if self.is_valid(next_empty, guess) is True:
+                    row, col = next_empty
+                    self.board[row][col] = guess
+                    self.solver()
+                    if self.solver():
+                        return True
+                    self.board[row][col] = 0
+                    
+    def is_valid(self, next_empty, num):
+        row, col = next_empty
+        valid_in_row = self.valid_in_row(row, col, num)
+        valid_in_col = self.valid_in_col(row, col, num)
+        valid_in_square = self.valid_in_square(row, col, num)
+        return all([valid_in_row, valid_in_col, valid_in_square])
+
+def solve_sudoku(board):
+    gameboard = Board(board)
+    print(f'\nPuzzle to solve:\n{gameboard}')
+    if gameboard.solver():
+        print('\nSolved puzzle:')
+        print(gameboard)
+    else:
+        print('\nThe provided puzzle is unsolvable.')
+    return gameboard.board
+        
+puzzle = [
+    [0, 0, 2, 0, 0, 8, 0, 0, 0],
+    [0, 0, 0, 0, 0, 3, 7, 6, 2],
+    [4, 3, 0, 0, 0, 0, 8, 0, 0],
+    [0, 5, 0, 0, 3, 0, 0, 9, 0],
+    [0, 4, 0, 0, 0, 0, 0, 2, 6],
+    [0, 0, 0, 4, 6, 7, 0, 0, 0],
+    [0, 8, 6, 7, 0, 4, 0, 0, 0],
+    [0, 0, 0, 5, 1, 9, 0, 0, 8],
+    [1, 7, 0, 0, 0, 6, 0, 0, 5]
+]
+
+solve_sudoku(puzzle)
