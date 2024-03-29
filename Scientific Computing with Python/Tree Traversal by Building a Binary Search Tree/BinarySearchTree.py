@@ -55,4 +55,8 @@ class BinarySearchTree:
     def _min_value(self, node):
         while node.left is not None:
             node = node.left
-        
+        return node.key
+    
+    def inorder_traversal(self):
+        result = []
+        _inorder_traversal(self.root)
