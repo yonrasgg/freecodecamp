@@ -26,12 +26,19 @@ class Category:
             cash_available += item['amount']
     
     def transfer(self, amount, category):
-        if withdraw:
-            withdraw = self.withdraw(amount, f"Transfer to {category.name}")
-            return True
+        if self.check_funds(amount) == True:
+             self.ledger.append({"amount": - amount, "description": f'Transfer to {category.name}'})
+             category.deposit(amount, description = f'Transfer from {self.name}')
+             return True
         else:
-            category.deposit(amount, f"Transfer from {self.name}")
             return False
+        
+    def check_funds(self, amount):
+        return amount <= self.get_balance()
+    
+    def __str__(self):
+        
+    
                 
 def create_spend_chart(categories):
     pass
